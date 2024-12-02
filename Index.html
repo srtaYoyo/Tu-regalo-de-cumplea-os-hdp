@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu regalo de cumpleaños</title>
+    <style>
+        body {
+            background-color: #A7C7E7; /* Fondo azul pastel */
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .content {
+            margin-top: 100px;
+        }
+        .gift-box {
+            font-size: 40px;
+            background-color: #FFD700;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="gift-box" onclick="revealGift()">
+            ¡Haz click para abrir tu regalo!
+        </div>
+        <div id="gift" style="display:none; font-size: 100px; margin-top: 20px;">
+            🤪
+        </div>
+    </div>
+
+    <script>
+        function revealGift() {
+            document.getElementById("gift").style.display = "block";
+            document.querySelector(".gift-box").style.display = "none";
+        }
+    </script>
+</body>
+</html>
